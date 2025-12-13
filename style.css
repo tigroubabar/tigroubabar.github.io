@@ -47,26 +47,50 @@ main {
 }
 
 .about, .hobbies {
-    background-color: var(--darker-bg);
-    padding: 40px;
-    border-radius: 10px;
-    border-left: 4px solid var(--accent);
+    position: relative;
+    padding: 42px;
+    border-radius: 16px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.035),
+        rgba(0, 217, 255, 0.05)
+    );
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    border: 1px solid rgba(0, 217, 255, 0.18);
+
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.55),
+        inset 0 0 18px rgba(0, 217, 255, 0.04);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.about h2, .hobbies h2 {
+.about h2,
+.hobbies h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    color: var(--accent);
+    margin-bottom: 18px;
+
+    background: linear-gradient(90deg, var(--accent), #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 0 0 8px rgba(0, 217, 255, 0.25);
 }
 
-.about p, .hobbies p {
-    font-size: 1.1rem;
+.about p,
+.hobbies p {
+    font-size: 1.05rem;
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
 .hobbies {
-    margin-top: 40px;
+    margin-top: 48px;
 }
 
 
