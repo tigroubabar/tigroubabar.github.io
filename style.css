@@ -46,7 +46,9 @@ main {
     padding: 60px 20px;
 }
 
-.about, .hobbies {
+.about,
+.hobbies,
+.contact {
     position: relative;
     padding: 42px;
     border-radius: 16px;
@@ -70,7 +72,8 @@ main {
 }
 
 .about h2,
-.hobbies h2 {
+.hobbies h2,
+.contact h2 {
     font-size: 2rem;
     margin-bottom: 18px;
 
@@ -83,13 +86,15 @@ main {
 }
 
 .about p,
-.hobbies p {
+.hobbies p,
+.contact p {
     font-size: 1.05rem;
     color: var(--text-secondary);
     line-height: 1.85;
 }
 
-.hobbies {
+.hobbies,
+.contact {
     margin-top: 48px;
 }
 
@@ -136,7 +141,7 @@ a:hover {
     }
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
