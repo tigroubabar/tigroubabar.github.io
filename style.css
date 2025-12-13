@@ -69,6 +69,19 @@ main {
     margin-top: 40px;
 }
 
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     header h1 {
