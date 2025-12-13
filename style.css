@@ -65,6 +65,24 @@ main {
     line-height: 1.8;
 }
 
+.hobbies {
+    background-color: var(--darker-bg);
+    padding: 40px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent);
+    margin-top: 40px;
+}
+.hobbies h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+.hobbies p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     header h1 {
