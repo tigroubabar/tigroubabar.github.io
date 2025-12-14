@@ -141,6 +141,13 @@ a:hover {
     }
 }
 
+.discord-username {
+    font-family: 'Courier New', Courier, monospace; /* police différente mais lisible */
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px; /* un petit espacement pour que ça se distingue */
+}
+
 
 @media (max-width: 768px) {
     header h1 {
