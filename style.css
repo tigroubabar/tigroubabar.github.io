@@ -88,7 +88,7 @@ section p {
     line-height: 1.85;
 }
 
-a {
+section a {
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
@@ -117,7 +117,7 @@ a {
     transition: 0.2s ease;
 }
 
-a:hover {
+section a:hover {
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
     transition: text-shadow 0.2s ease;
 }
@@ -128,26 +128,28 @@ a:hover {
 
 
 .back-to-home{
+    display: flex;
     position: fixed;
     z-index: 9999;
     top: 20px;
     left: 20px;
-    border: 3px solid #55af6f;
+    border: 3px solid #00d9ff;
     border-radius: 200px;
-    background-color: #183420;
+    background-color: #182834;
     padding: 4px;
     transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
     opacity: 0.5;
-    box-shadow: 0 0 30px #55af6f;
+    box-shadow: 0 0 30px #00d9ff;
     transform: scale(1);
 }
 
 .back-to-home:hover{
-    background-color: #55af6f;
+    background-color: #00d9ff;
     transition: background-color 0.4s ease , transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
     opacity: 0.8;
-    box-shadow: 0 0 50px #55af6f;
+    box-shadow: 0 0 50px #00d9ff;
 }
+
 
 .discord-username {
     font-family: 'Courier New', Courier, monospace; /* police différente mais lisible */
