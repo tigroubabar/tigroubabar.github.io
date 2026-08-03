@@ -18,6 +18,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    text-align: justify;
 }
 
 header {
@@ -87,12 +88,6 @@ section p {
     line-height: 1.85;
 }
 
-.hobbies,
-.contact {
-    margin-top: 48px;
-}
-
-
 a {
     font-size: 1.1rem;
     font-weight: 600;
@@ -118,11 +113,50 @@ a {
     -webkit-text-fill-color: transparent;
 
     animation: rgbAnimation 6s ease-in-out infinite;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.7);
+    transition: 0.2s ease;
 }
 
 a:hover {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+    transition: text-shadow 0.2s ease;
 }
+
+.with-margin {
+    margin-top: 48px;
+}
+
+
+.back-to-home{
+    position: fixed;
+    z-index: 9999;
+    top: 20px;
+    left: 20px;
+    border: 3px solid #55af6f;
+    border-radius: 200px;
+    background-color: #183420;
+    padding: 4px;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    opacity: 0.5;
+    box-shadow: 0 0 30px #55af6f;
+    transform: scale(1);
+}
+
+.back-to-home:hover{
+    background-color: #55af6f;
+    transition: background-color 0.4s ease , transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    opacity: 0.8;
+    box-shadow: 0 0 50px #55af6f;
+}
+
+.discord-username {
+    font-family: 'Courier New', Courier, monospace; /* police différente mais lisible */
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px; /* un petit espacement pour que ça se distingue */
+}
+
+
 @keyframes rgbAnimation {
     0% {
         background-position: 0% 50%;
@@ -135,12 +169,7 @@ a:hover {
     }
 }
 
-.discord-username {
-    font-family: 'Courier New', Courier, monospace; /* police différente mais lisible */
-    font-weight: 500;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px; /* un petit espacement pour que ça se distingue */
-}
+
 
 
 @media (max-width: 768px) {
@@ -156,7 +185,4 @@ a:hover {
         padding: 40px 15px;
     }
 
-    .about {
-        padding: 30px;
-    }
 }
